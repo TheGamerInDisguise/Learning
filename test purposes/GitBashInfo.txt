@@ -78,3 +78,9 @@ git push origin <branch-name> - creates a branch in github which you can push st
 git push origin <branch-name>:<branch-github-name> - pushes a branch from local to a branch on github or creates one if it doesnt exist
 
 git push -d origin <github-branch> - deletes branch from github entirely
+
+git checkout -- <file-name> - undo uncommited code, use "." or "--a" for all files
+
+git revert <log-commit-id> - copy the commit id after running git log to take the specific id of the commit you want to revert and press enter
+
+git reset --hard <log-commit-id> - deletes everything in the code that happened after the log id you inserted
