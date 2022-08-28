@@ -1,0 +1,80 @@
+Creating repositories - git init
+
+git status - checks if this is a git file or not
+
+--a - all files
+
+Syncing repositories - origin,pull,push
+
+Parallel development - branch,merge,rebase
+
+Making changes - status,add,commit
+
+git clone - creates a copy of the repository on your local machine
+
+git fork - you create a copy of the repository on your Github account
+
+git config --global user.name "Your Name Here" - sets your name on git 
+
+git config --global user.email "YourEmail@example.com" - sets your email on git
+
+git add --a = stages all files in the folder on git
+
+git commit -m "Message here" = commits all files already staged without opening a text editor but adding a message
+
+git log = shows the log of everything that happened in the repository
+
+rm -rf .git = deletes git repository from git and doesn't delete the folder on your pc
+
+pwd = present working directory
+
+ls = lists all files in folder
+
+cd = command directory
+
+git clone "Link" = copy paste the actual link instead of the "Link" and no quotes needed to install the entire repo in the folder you are working
+inside of
+
+git ignores a folder which is blank by default
+
+.gitignore - make a file without a title and instead of .txt , use .gitignore. Now when you insert a name of a file inside of it, it will ignore it from 
+the repo but you will have to commit and add this file when you update the files needed to be ignored, to ignore a folder , type "dir/" but replace dir with the name 
+of the folder you want to ignore instead
+
+git diff - compares the difference of the files which are named same but are different in staging area along with working directory
+
+git diff --staged - same like git diff but compares between the staging area and the previous commit
+
+git commit -a -m "Text here" - skips staging area and directly commits unstaged files that are already tracked
+
+git rm "file name here" - removes file through terminal and adds so you just need to commit
+
+git mv "original file name" "name to rename the file" - renames file through terminal and adds so you just need to commit
+
+git rm --cached "file name" - untracks file from git
+
+git config --global alias."alias name no quotes needed" 'the thing that is needed to have an alias' - makes an alias for a command that you want to shorten or something
+
+git checkout -b <new-branch-name> - makes branch and does work there
+
+git checkout <branch-name> - changes branch and restores work done there
+
+git branch - shows all branches that you have
+
+git merge <branch name to be merge>  - merges 2 branches in the parent branch you run the command in
+
+git branch -v - To check all branches with their last commit hash code and message
+
+git branch --merged - To check which branch are merged
+
+git branch --no-merged - To check which branch are not merged
+
+git branch -d <branch-name>   - To delete branch
+
+git branch -D <branch-name> - TO delete unmerged branch
+
+git push origin <branch-name> - creates a branch in github which you can push stuff on using git
+
+git push origin <branch-name>:<branch-github-name> - pushes a branch from local to a branch on github or creates one if it doesnt exist
+
+git push -d origin <github-branch> - deletes branch from github entirely
